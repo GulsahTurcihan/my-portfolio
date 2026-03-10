@@ -9,13 +9,13 @@ export function Hero() {
   return (
     <section>
       <div className="m-2 min-h-svh bg-[#001122] px-48 py-8 flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold text-white">
+        <h1 className="text-6xl text-center font-bold text-white">
           <span className="text-lime-200 underline">design</span> and{" "}
           <span className="text-lime-200 underline">develop</span> digital
           solutions
         </h1>
 
-        <div className="mt-24 flex gap-8">
+        <div className="mt-24 flex flex-col sm:flex-row gap-8">
           <MotionLink
             href="/"
             initial="rest"
