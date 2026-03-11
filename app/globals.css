@@ -2,7 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
+  --foreground: #001122;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

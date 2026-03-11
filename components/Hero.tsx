@@ -17,7 +17,7 @@ export function Hero() {
 
         <div className="mt-24 flex flex-col sm:flex-row gap-8">
           <MotionLink
-            href="/"
+            href="#services-section"
             initial="rest"
             whileHover="hover"
             animate="rest"

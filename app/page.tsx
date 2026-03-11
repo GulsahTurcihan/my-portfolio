@@ -1,7 +1,7 @@
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Menu } from "@/components/Menu";
+import { ServicesSection } from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Container>
         <Header />
         <Hero />
-        <Menu />
+        <ServicesSection />
       </Container>
     </>
   );
