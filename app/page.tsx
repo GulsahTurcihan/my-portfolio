@@ -1,6 +1,7 @@
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { ProjectSection } from "@/components/ProjectSection";
 import { ServicesSection } from "@/components/ServicesSection";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Header />
         <Hero />
         <ServicesSection />
+        <ProjectSection />
       </Container>
     </>
   );

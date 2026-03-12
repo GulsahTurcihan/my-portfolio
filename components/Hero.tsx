@@ -2,10 +2,23 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
+import type { MouseEvent } from "react";
 
 const MotionLink = motion(Link);
 
 export function Hero() {
+  const handleServicesClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const section = document.getElementById("services-section");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleProjectClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const section = document.getElementById("project-section");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section>
       <div className="m-2 min-h-svh bg-[#001122] px-48 py-8 flex flex-col items-center justify-center">
@@ -22,6 +35,7 @@ export function Hero() {
             whileHover="hover"
             animate="rest"
             className="relative overflow-hidden border border-[#352dd4] bg-lime-200 px-20 py-4 font-bold text-[#001122]"
+            onClick={handleServicesClick}
           >
             <motion.span
               variants={{
@@ -44,11 +58,12 @@ export function Hero() {
           </MotionLink>
 
           <MotionLink
-            href="/"
+            href="#project-section"
             initial="rest"
             whileHover="hover"
             animate="rest"
             className="relative overflow-hidden border border-[#352dd4] px-20 py-4 font-bold text-white"
+            onClick={handleProjectClick}
           >
             <motion.span
               variants={{

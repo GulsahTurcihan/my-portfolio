@@ -23,11 +23,11 @@ export function Menu() {
     },
     {
       label: "Works",
-      href: "/",
+      href: "#project-section",
     },
     {
       label: "Services",
-      href: "/",
+      href: "#services-section",
     },
     {
       label: "Contact",
